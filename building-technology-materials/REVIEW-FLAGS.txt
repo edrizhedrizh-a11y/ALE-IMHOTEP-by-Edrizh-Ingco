@@ -1,0 +1,45 @@
+ALE Building Technology and Materials v1 review flags
+Cards: 1678
+Flagged cards: 14
+
+BTM-0441 / Q441 / source #441: table blank/not indicated condition preserved
+Question: Which concrete class has the proportion 1 : 1 : 2 and is used for pre-stressed and post-tensioned work?
+
+BTM-0657 / Q657 / source #657: transcript wording suggests verification needed
+Question: In general, which clothing weight is more likely to catch fire?
+
+BTM-0702 / Q702 / source #702: transcript wording suggests verification needed
+Question: Which brands are listed under Doors & Windows?
+
+BTM-0904 / Q904 / source #904: unclear text/value in uploaded image transcript
+Question: Stone cornices are used to provide the appearance of what?
+
+BTM-1121 / Q1121 / source #1121: unclear text/value in uploaded image transcript
+Question: After sheet plastic is heated in thermoforming, what forces it into shape?
+
+BTM-1145 / Q1145 / source #1145: table blank/not indicated condition preserved
+Question: The “Kinds of Thermal Insulation” section first lists what main kind?
+
+BTM-1156 / Q1156 / source #1156: table blank/not indicated condition preserved
+Question: Blanket insulation is made from what type of materials?
+
+BTM-1157 / Q1157 / source #1157: table blank/not indicated condition preserved
+Question: Which fibrous materials are listed for blanket insulation?
+
+BTM-1158 / Q1158 / source #1158: table blank/not indicated condition preserved
+Question: Blanket insulation is manufactured in mat widths of what sizes?
+
+BTM-1159 / Q1159 / source #1159: table blank/not indicated condition preserved
+Question: Blanket insulation may be manufactured in what length or roll range?
+
+BTM-1160 / Q1160 / source #1160: unclear text/value in uploaded image transcript, table blank/not indicated condition preserved
+Question: What controlled thicknesses are visible for blanket insulation?
+
+BTM-1161 / Q1161 / source #1161: table blank/not indicated condition preserved
+Question: Batts are similar to blankets but are restricted to what length?
+
+BTM-1173 / Q1173 / source #1173: table blank/not indicated condition preserved
+Question: Why is block or rigid slab insulation called that?
+
+BTM-1190 / Q1190 / source #1190: unclear text/value in uploaded image transcript
+Question: What is the purpose of soil poisoning according to the visible text?

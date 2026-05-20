@@ -1,0 +1,30 @@
+{
+  "subject": "ALE Building Technology and Materials",
+  "folder": "building-technology-materials",
+  "card_count": 1678,
+  "source_numbering": "1-1678 continuous",
+  "duplicate_source_numbers": [],
+  "missing_source_numbers": [],
+  "topic_counts": {
+    "Vernacular Terms": 167,
+    "CSI / 16 Divisions": 242,
+    "Fire / Extinguishers": 22,
+    "Concrete Mix / Cement": 163,
+    "Lighting / Electrical": 10,
+    "Mortar / Plaster": 26,
+    "General Building Materials": 408,
+    "Masonry / CHB / Brick": 87,
+    "Reinforcement / Concrete Cover": 61,
+    "Paint / Finishes / Tiles": 67,
+    "Mechanical / Plumbing / Equipment": 66,
+    "Wood / Lumber": 102,
+    "Glass / Plastics / Insulation": 82,
+    "Doors / Windows / Hardware": 85,
+    "Roofing / Waterproofing": 64,
+    "Acoustics / Sound": 26
+  },
+  "flagged_count": 14,
+  "parse_failures": [],
+  "source": "ChatGPT-Flashcard Creation Rules.txt",
+  "note": "Transformation from uploaded transcript; not independently audited against official codes/standards."
+}
