@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>ALE IMHOTEP Dashboard</title>
+  <style>
+    :root{
+      --bg:#f5efe4;
+      --panel:#fffaf2;
+      --card:#fffdf8;
+      --ink:#14213d;
+      --muted:#5f6370;
+      --line:#e2d4bd;
+      --accent:#8a5a24;
+      --accentDark:#5f3b13;
+      --soft:#efe0c7;
+      --ok:#16794c;
+      --warn:#9a5b00;
+      --shadow:0 18px 45px rgba(40,25,8,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:linear-gradient(135deg,#fffaf2,var(--bg));
+      color:var(--ink);
+      min-height:100vh;
+    }
+    .wrap{
+      width:min(1120px, calc(100% - 28px));
+      margin:0 auto;
+      padding:28px 0 44px;
+    }
+    .hero{
+      background:rgba(255,250,242,.86);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:26px;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:18px;
+      align-items:center;
+    }
+    h1{
+      margin:0;
+      font-size:clamp(28px,5vw,48px);
+      letter-spacing:-.04em;
+      line-height:1;
+    }
+    .sub{
+      margin:10px 0 0;
+      color:var(--muted);
+      font-size:15px;
+      line-height:1.55;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:var(--soft);
+      border:1px solid var(--line);
+      color:var(--accentDark);
+      font-weight:800;
+      white-space:nowrap;
+    }
+    .toolbar{
+      margin:18px 0;
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:12px;
+    }
+    input{
+      width:100%;
+      padding:15px 16px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background:#fffdf8;
+      color:var(--ink);
+      font-size:16px;
+      outline:none;
+    }
+    input:focus{border-color:var(--accent); box-shadow:0 0 0 4px rgba(138,90,36,.12)}
+    .smallBtn{
+      border:1px solid var(--line);
+      background:var(--card);
+      color:var(--accentDark);
+      padding:12px 16px;
+      border-radius:16px;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 12px 30px rgba(40,25,8,.08);
+      display:flex;
+      flex-direction:column;
+      min-height:220px;
+    }
+    .top{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:10px;
+    }
+    .icon{
+      width:44px;height:44px;
+      border-radius:16px;
+      display:grid;
+      place-items:center;
+      background:var(--soft);
+      color:var(--accentDark);
+      font-size:22px;
+      flex:0 0 auto;
+    }
+    h2{
+      margin:0;
+      font-size:20px;
+      line-height:1.15;
+      letter-spacing:-.02em;
+    }
+    .meta{
+      margin:7px 0 0;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.4;
+    }
+    .status{
+      margin-top:2px;
+      font-size:12px;
+      font-weight:900;
+      padding:7px 10px;
+      border-radius:999px;
+      background:#f1eee7;
+      color:var(--warn);
+      white-space:nowrap;
+    }
+    .status.ok{background:#e8f6ef;color:var(--ok)}
+    .status.miss{background:#fff4dd;color:var(--warn)}
+    .desc{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.55;
+      margin:8px 0 16px;
+      flex:1;
+    }
+    .actions{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+      margin-top:auto;
+    }
+    a.btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      border-radius:16px;
+      padding:13px 14px;
+      font-weight:900;
+      border:1px solid var(--line);
+      color:var(--accentDark);
+      background:var(--soft);
+    }
+    a.btn.primary{
+      background:var(--accent);
+      color:white;
+      border-color:var(--accent);
+    }
+    a.btn.disabled{
+      opacity:.55;
+      pointer-events:none;
+      background:#f1eee7;
+      color:#686868;
+    }
+    .note{
+      margin-top:18px;
+      color:var(--muted);
+      line-height:1.55;
+      font-size:13px;
+      text-align:center;
+    }
+    .empty{
+      display:none;
+      background:var(--card);
+      border:1px dashed var(--line);
+      padding:28px;
+      border-radius:var(--radius);
+      color:var(--muted);
+      text-align:center;
+    }
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .hero{grid-template-columns:1fr}
+    }
+    @media (max-width:620px){
+      .wrap{width:min(100% - 18px, 1120px); padding-top:12px}
+      .grid{grid-template-columns:1fr}
+      .hero{padding:20px; border-radius:18px}
+      .toolbar{grid-template-columns:1fr}
+      h1{font-size:34px}
+      .card{min-height:auto}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>ALE IMHOTEP</h1>
+        <p class="sub">
+          Architecture Licensure Exam reviewer flashcards. Open a subject below.
+          Uploaded folders will automatically show as available once GitHub Pages can load them.
+        </p>
+      </div>
+      <div class="badge" id="availableBadge">Checking subjects…</div>
+    </section>
+
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="Search subjects, e.g. design, planning, theory…" />
+      <button class="smallBtn" id="showAll" type="button">Show All</button>
+    </section>
+
+    <section class="grid" id="grid"></section>
+    <section class="empty" id="empty">No subject matched your search.</section>
+
+    <p class="note">
+      Tip: upload each subject folder at the repo root. Example:
+      <strong>/architectural-design/index.html</strong> and <strong>/architectural-design/cards.json</strong>.
+    </p>
+  </main>
+
+  <script>
+    const subjects = [
+      {
+        title:"Architectural Design",
+        path:"architectural-design/",
+        icon:"🏠",
+        count:"426 cards",
+        desc:"Residential, subdivision, site planning, and building standards. This is the folder you already uploaded."
+      },
+      {
+        title:"Theory",
+        path:"theory/",
+        icon:"🏛️",
+        count:"549 cards",
+        desc:"Theory of Architecture plus Theory 2, with selected source-backed visuals."
+      },
+      {
+        title:"Planning",
+        path:"planning/",
+        icon:"🗺️",
+        count:"153 cards",
+        desc:"Site planning, CLUP, zoning, DHSUD/HLURB, housing agencies, and urban planning."
+      },
+      {
+        title:"Professional Practice",
+        path:"professional-practice/",
+        icon:"📋",
+        count:"270 cards",
+        desc:"RA 9266, SPP documents, contracts, professional conduct, and practice traps."
+      },
+      {
+        title:"Building Laws",
+        path:"building-laws/",
+        icon:"⚖️",
+        count:"196 cards",
+        desc:"NBCP, BP 344, Fire Code, accessibility, and building regulatory concepts."
+      },
+      {
+        title:"Building Construction",
+        path:"building-construction/",
+        icon:"🏗️",
+        count:"Reviewer folder",
+        desc:"Construction systems, structural basics, and building assembly review."
+      },
+      {
+        title:"Building Materials",
+        path:"building-materials/",
+        icon:"🧱",
+        count:"Reviewer folder",
+        desc:"Materials identification, properties, and image-backed material review."
+      },
+      {
+        title:"Building Utilities",
+        path:"building-utilities/",
+        icon:"⚡",
+        count:"Reviewer folder",
+        desc:"Electrical, mechanical, plumbing, sanitary, fire-protection and utility concepts."
+      },
+      {
+        title:"Tropical Design",
+        path:"tropical-design/",
+        icon:"🌿",
+        count:"Pending",
+        desc:"Tropical design, green architecture, passive cooling, shading, and energy concepts."
+      }
+    ];
+
+    const grid = document.getElementById("grid");
+    const search = document.getElementById("search");
+    const empty = document.getElementById("empty");
+    const badge = document.getElementById("availableBadge");
+
+    function cardTemplate(s){
+      return `
+        <article class="card" data-search="${(s.title + " " + s.desc + " " + s.path).toLowerCase()}" data-path="${s.path}">
+          <div class="top">
+            <div style="display:flex;gap:12px;align-items:flex-start">
+              <div class="icon">${s.icon}</div>
+              <div>
+                <h2>${s.title}</h2>
+                <p class="meta">${s.count} • /${s.path}</p>
+              </div>
+            </div>
+            <span class="status">Checking</span>
+          </div>
+          <p class="desc">${s.desc}</p>
+          <div class="actions">
+            <a class="btn primary" href="${s.path}">Open Subject</a>
+          </div>
+        </article>
+      `;
+    }
+
+    function render(){
+      grid.innerHTML = subjects.map(cardTemplate).join("");
+      checkAvailability();
+      applySearch();
+    }
+
+    async function exists(path){
+      try{
+        const res = await fetch(path + "index.html", {cache:"no-store"});
+        return res.ok;
+      }catch(e){
+        return false;
+      }
+    }
+
+    async function checkAvailability(){
+      const cards = Array.from(document.querySelectorAll(".card"));
+      let available = 0;
+      for(const card of cards){
+        const path = card.dataset.path;
+        const status = card.querySelector(".status");
+        const btn = card.querySelector(".btn");
+        const ok = await exists(path);
+        if(ok){
+          available++;
+          status.textContent = "Available";
+          status.className = "status ok";
+          btn.classList.remove("disabled");
+        }else{
+          status.textContent = "Not uploaded yet";
+          status.className = "status miss";
+          btn.classList.add("disabled");
+        }
+      }
+      badge.textContent = available + " subject" + (available === 1 ? "" : "s") + " available";
+    }
+
+    function applySearch(){
+      const q = search.value.trim().toLowerCase();
+      let shown = 0;
+      document.querySelectorAll(".card").forEach(card=>{
+        const hit = !q || card.dataset.search.includes(q);
+        card.style.display = hit ? "" : "none";
+        if(hit) shown++;
+      });
+      empty.style.display = shown ? "none" : "block";
+    }
+
+    search.addEventListener("input", applySearch);
+    document.getElementById("showAll").addEventListener("click", ()=>{
+      search.value = "";
+      applySearch();
+    });
+
+    render();
+  </script>
+</body>
+</html>
