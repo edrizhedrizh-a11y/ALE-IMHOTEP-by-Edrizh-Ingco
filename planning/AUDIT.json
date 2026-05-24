@@ -1,0 +1,25 @@
+{
+  "subject": "ALE Planning",
+  "folder": "planning",
+  "cards": 426,
+  "numericStandardCards": 398,
+  "duplicateQuestionStems": 2,
+  "validationIssues": [],
+  "topics": {
+    "Fire Safety, Exits & Egress": 143,
+    "Lots, Blocks & Subdivision Layout": 61,
+    "Parks, Playgrounds & Open Space": 56,
+    "Roads, RROW & Circulation": 54,
+    "Code Comparison & Most Stringent Rule": 30,
+    "Rooms, Doors & Building Dimensions": 27,
+    "Stairs, Ramps & Accessibility": 22,
+    "Community Facilities": 10,
+    "Walls, Firewalls & Structural Standards": 10,
+    "Utilities, Drainage & Sanitation": 9,
+    "Planning Standards": 4
+  },
+  "notes": [
+    "Values preserved from uploaded text; not independently audited.",
+    "No generated images."
+  ]
+}

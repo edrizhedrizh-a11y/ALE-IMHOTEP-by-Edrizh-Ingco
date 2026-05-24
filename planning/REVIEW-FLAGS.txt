@@ -1,0 +1,19 @@
+Parsed cards: 426
+Numeric/code/value cards detected: 398
+Duplicate question stems detected/preserved: 2
+- Duplicate stem: under ra 9514, what is the maximum rise for a single ramp run?
+- Duplicate stem: under bp 220, what firewall thickness is shown?
+Validation issues: none detected
+
+Topic counts:
+- Fire Safety, Exits & Egress: 143
+- Lots, Blocks & Subdivision Layout: 61
+- Parks, Playgrounds & Open Space: 56
+- Roads, RROW & Circulation: 54
+- Code Comparison & Most Stringent Rule: 30
+- Rooms, Doors & Building Dimensions: 27
+- Stairs, Ramps & Accessibility: 22
+- Community Facilities: 10
+- Walls, Firewalls & Structural Standards: 10
+- Utilities, Drainage & Sanitation: 9
+- Planning Standards: 4
