@@ -1,0 +1,25 @@
+Building Materials New Approach v3 — Latest Text Rebuild
+
+This is separate folder only.
+Dashboard is NOT included.
+Subject mock exam is NOT included.
+
+Upload/replace this folder only:
+
+building-materials-new-approach/
+  index.html
+  cards.json
+  README.md
+  AUDIT.json
+  SOURCE-COVERAGE.txt
+  UPLOAD-INSTRUCTIONS-v3.txt
+
+On iPad:
+1. Open GitHub repo.
+2. Open the existing building-materials-new-approach folder.
+3. Add file > Upload files.
+4. Select files from inside the extracted folder, not the folder itself.
+5. Commit changes.
+6. Open /building-materials-new-approach/?v=3
+
+If old content still appears, add ?v=3 to the URL or refresh Safari/Chrome.

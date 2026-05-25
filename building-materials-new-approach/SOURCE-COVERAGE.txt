@@ -1,29 +1,29 @@
-ALE Building Materials — New Approach v1
-Cards: 540
-Folder: /building-materials-new-approach/
+Building Materials New Approach v3 — Latest Text Rebuild
 
-Coverage included from uploaded text:
-- Building Materials Specific Reviewer: 300 items
-- Building Materials Weakness Drill: 120 items
-- Building Materials Final Trap Drill: 80 items
-- Building Materials Exam Simulation: 40 items
+Total parsed cards: 750
+Source: latest uploaded Pasted text.txt
 
-Topic counts:
-- Weakness Drill: Sizes / Computation: 40
-- Weakness Drill: Confusing Pairs / Failure: 40
-- Weakness Drill: Sequence / Occupancy: 40
-- Final Trap: QC / Storage / Systems: 40
-- Final Trap: Green / Hazard / Tropical / Computation: 40
-- Exam Simulation: Mixed: 40
-- Boards / Sheets / Panels: 25
-- Cement / Concrete / Masonry: 25
-- Tiles / Adhesives / Grout: 25
-- Waterproofing / Sealants: 25
-- Paints / Primers / Surface Prep: 25
-- Roofing / Cladding / Exterior: 25
-- Glass / Metals / Hardware: 25
-- Flooring / Ceiling / Interior Finishes: 25
-- Fire / Acoustic / Thermal / Insulation: 25
-- Quantity / Unit / Coverage Computation: 25
-- Material Failure / Defects / Compatibility: 25
-- Occupancy-Based Material Scenarios: 25
+Part coverage:
+- Part 0: Board Exam Thinking Method for Building Materials — 50 cards, Q1–Q50
+- Part 1: Material Properties and Behavior — 50 cards, Q51–Q100
+- Part 2: Boards, Sheets, and Panels — 50 cards, Q101–Q150
+- Part 3: Cementitious Materials — 50 cards, Q151–Q200
+- Part 4: Tiles, Flooring, Adhesives, and Grout — 50 cards, Q201–Q250
+- Part 5: Waterproofing, Sealants, and Moisture Protection — 50 cards, Q251–Q300
+- Part 6: Paints, Coatings, Primers, and Surface Preparation — 50 cards, Q301–Q350
+- Part 7: Roofing, Cladding, and Exterior Envelope — 50 cards, Q351–Q400
+- Part 8: Glass, Metals, Hardware, and Safety Materials — 50 cards, Q401–Q450
+- Part 9: Fire, Acoustic, Thermal, and Insulation Materials — 50 cards, Q451–Q500
+- Part 10: Ceilings, Partitions, and Interior Systems — 50 cards, Q501–Q550
+- Part 11: Occupancy-Based Material Selection — 50 cards, Q551–Q600
+- Part 12: Failure Diagnosis and Best First Action — 50 cards, Q601–Q650
+- Part 13: Computation and Quantity Estimating — 50 cards, Q651–Q700
+- Part 14: Specifications, Testing, Submittals, and Quality Control — 50 cards, Q701–Q750
+
+First card check:
+Q1: A public school toilet partition wall will be painted and exposed to humidity, occasional splash, and frequent cleaning. Which board substrate is most appropriate?
+Correct: 6mm to 12mm fiber-cement board, HardieFlex/Shera-type, bought per sheet, with treated joints and moisture-compatible paint system
+
+Last card check:
+Q750: In board exam questions about specifications, testing, submittals, and quality control, what is the best first method to choose the correct answer?
+Correct: Check whether the material is proven by product data, sample, mock-up, method statement, test report, compatibility, delivery condition, storage, inspection, and acceptance criteria

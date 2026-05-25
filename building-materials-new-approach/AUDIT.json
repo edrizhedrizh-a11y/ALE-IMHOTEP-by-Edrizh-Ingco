@@ -1,39 +1,46 @@
 {
-  "subject": "ALE Building Materials — New Approach",
-  "version": "v2-shuffled-choices",
+  "version": "v3-latest-text-rebuild",
   "folder": "building-materials-new-approach",
-  "cards": 540,
-  "numbering": "Q1-Q540 continuous",
-  "source": "/mnt/data/Pasted text.txt latest uploaded text",
-  "included_sections": {
-    "Building Materials Specific Reviewer": 300,
-    "Weakness Drill": 120,
-    "Final Trap Drill": 80,
-    "Exam Simulation": 40
+  "cards": 750,
+  "source_file": "latest uploaded Pasted text.txt",
+  "parse_method": "Flashcard Number blocks with Question, Choices A to D, Correct Answer, and explanation fields",
+  "parse_issues": [],
+  "continuous_numbering": "Q1-Q750",
+  "parts": {
+    "Part 0: Board Exam Thinking Method for Building Materials": 50,
+    "Part 1: Material Properties and Behavior": 50,
+    "Part 2: Boards, Sheets, and Panels": 50,
+    "Part 3: Cementitious Materials": 50,
+    "Part 4: Tiles, Flooring, Adhesives, and Grout": 50,
+    "Part 5: Waterproofing, Sealants, and Moisture Protection": 50,
+    "Part 6: Paints, Coatings, Primers, and Surface Preparation": 50,
+    "Part 7: Roofing, Cladding, and Exterior Envelope": 50,
+    "Part 8: Glass, Metals, Hardware, and Safety Materials": 50,
+    "Part 9: Fire, Acoustic, Thermal, and Insulation Materials": 50,
+    "Part 10: Ceilings, Partitions, and Interior Systems": 50,
+    "Part 11: Occupancy-Based Material Selection": 50,
+    "Part 12: Failure Diagnosis and Best First Action": 50,
+    "Part 13: Computation and Quantity Estimating": 50,
+    "Part 14: Specifications, Testing, Submittals, and Quality Control": 50
   },
-  "answer_distribution_saved_json": {
-    "A": 135,
-    "B": 135,
-    "C": 135,
-    "D": 135
-  },
-  "app_choices": "live shuffled on render",
-  "old_1678_deck_included": false,
-  "parse_failures": [],
-  "notes": [
-    "Separate folder only.",
-    "Same folder name, so it can replace the older building-materials-new-approach folder.",
-    "Correct letters are balanced A/B/C/D in cards.json.",
-    "The app also shuffles choices during review."
-  ],
-  "choices_shuffled_in_cards_json": true,
-  "app_live_shuffles_choices": true,
   "correct_letter_distribution": {
-    "A": 135,
-    "B": 135,
-    "C": 135,
-    "D": 135
+    "A": 188,
+    "B": 188,
+    "C": 187,
+    "D": 187
   },
+  "choices_shuffled_in_cards_json": true,
+  "choices_live_shuffled_in_app": true,
   "dashboard_included": false,
-  "mock_exam_included": false
+  "mock_exam_included": false,
+  "first_card": {
+    "id": "BMNA-001",
+    "question": "A public school toilet partition wall will be painted and exposed to humidity, occasional splash, and frequent cleaning. Which board substrate is most appropriate?",
+    "correctAnswer": "6mm to 12mm fiber-cement board, HardieFlex/Shera-type, bought per sheet, with treated joints and moisture-compatible paint system"
+  },
+  "last_card": {
+    "id": "BMNA-750",
+    "question": "In board exam questions about specifications, testing, submittals, and quality control, what is the best first method to choose the correct answer?",
+    "correctAnswer": "Check whether the material is proven by product data, sample, mock-up, method statement, test report, compatibility, delivery condition, storage, inspection, and acceptance criteria"
+  }
 }
