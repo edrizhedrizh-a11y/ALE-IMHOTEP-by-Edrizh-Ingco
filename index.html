@@ -6,19 +6,19 @@
   <title>ALE IMHOTEP Dashboard</title>
   <style>
     :root{
-      --bg:#f5efe4;
+      --bg:#f6efe5;
       --panel:#fffaf2;
       --card:#fffdf8;
-      --ink:#14213d;
-      --muted:#5f6370;
-      --line:#e2d4bd;
-      --accent:#8a5a24;
-      --accentDark:#5f3b13;
-      --soft:#efe0c7;
+      --ink:#17213b;
+      --muted:#666270;
+      --line:#e2d3bc;
+      --accent:#8f6428;
+      --accentDark:#5d3b16;
+      --soft:#eddcc1;
       --ok:#16794c;
-      --warn:#9a5b00;
-      --shadow:0 18px 45px rgba(40,25,8,.12);
-      --radius:22px;
+      --missing:#9a5b00;
+      --shadow:0 18px 45px rgba(42,27,10,.12);
+      --radius:24px;
     }
     *{box-sizing:border-box}
     body{
@@ -31,10 +31,10 @@
     .wrap{
       width:min(1120px, calc(100% - 28px));
       margin:0 auto;
-      padding:28px 0 44px;
+      padding:26px 0 44px;
     }
     .hero{
-      background:rgba(255,250,242,.86);
+      background:rgba(255,250,242,.92);
       border:1px solid var(--line);
       border-radius:var(--radius);
       padding:26px;
@@ -46,26 +46,29 @@
     }
     h1{
       margin:0;
-      font-size:clamp(28px,5vw,48px);
-      letter-spacing:-.04em;
+      font-size:clamp(30px,5vw,52px);
+      letter-spacing:-.05em;
       line-height:1;
     }
     .sub{
-      margin:10px 0 0;
+      margin:12px 0 0;
       color:var(--muted);
-      font-size:15px;
+      font-size:16px;
       line-height:1.55;
+      max-width:780px;
     }
     .badge{
       display:inline-flex;
       align-items:center;
+      justify-content:center;
+      min-width:190px;
       gap:8px;
-      padding:10px 14px;
+      padding:12px 16px;
       border-radius:999px;
       background:var(--soft);
       border:1px solid var(--line);
       color:var(--accentDark);
-      font-weight:800;
+      font-weight:900;
       white-space:nowrap;
     }
     .toolbar{
@@ -77,21 +80,21 @@
     input{
       width:100%;
       padding:15px 16px;
-      border-radius:16px;
+      border-radius:18px;
       border:1px solid var(--line);
       background:#fffdf8;
       color:var(--ink);
       font-size:16px;
       outline:none;
     }
-    input:focus{border-color:var(--accent); box-shadow:0 0 0 4px rgba(138,90,36,.12)}
+    input:focus{border-color:var(--accent); box-shadow:0 0 0 4px rgba(143,100,40,.13)}
     .smallBtn{
       border:1px solid var(--line);
       background:var(--card);
       color:var(--accentDark);
       padding:12px 16px;
-      border-radius:16px;
-      font-weight:800;
+      border-radius:18px;
+      font-weight:900;
       cursor:pointer;
     }
     .grid{
@@ -104,10 +107,10 @@
       border:1px solid var(--line);
       border-radius:var(--radius);
       padding:18px;
-      box-shadow:0 12px 30px rgba(40,25,8,.08);
+      box-shadow:0 12px 30px rgba(42,27,10,.08);
       display:flex;
       flex-direction:column;
-      min-height:220px;
+      min-height:226px;
     }
     .top{
       display:flex;
@@ -116,14 +119,21 @@
       gap:12px;
       margin-bottom:10px;
     }
+    .titleRow{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      min-width:0;
+    }
     .icon{
-      width:44px;height:44px;
-      border-radius:16px;
+      width:46px;
+      height:46px;
+      border-radius:17px;
       display:grid;
       place-items:center;
       background:var(--soft);
       color:var(--accentDark);
-      font-size:22px;
+      font-size:23px;
       flex:0 0 auto;
     }
     h2{
@@ -137,19 +147,20 @@
       color:var(--muted);
       font-size:13px;
       line-height:1.4;
+      word-break:break-word;
     }
     .status{
       margin-top:2px;
       font-size:12px;
-      font-weight:900;
+      font-weight:950;
       padding:7px 10px;
       border-radius:999px;
       background:#f1eee7;
-      color:var(--warn);
+      color:var(--missing);
       white-space:nowrap;
     }
     .status.ok{background:#e8f6ef;color:var(--ok)}
-    .status.miss{background:#fff4dd;color:var(--warn)}
+    .status.miss{background:#fff4dd;color:var(--missing)}
     .desc{
       color:var(--muted);
       font-size:14px;
@@ -168,9 +179,9 @@
       align-items:center;
       justify-content:center;
       text-decoration:none;
-      border-radius:16px;
+      border-radius:17px;
       padding:13px 14px;
-      font-weight:900;
+      font-weight:950;
       border:1px solid var(--line);
       color:var(--accentDark);
       background:var(--soft);
@@ -205,11 +216,12 @@
     @media (max-width:900px){
       .grid{grid-template-columns:repeat(2,1fr)}
       .hero{grid-template-columns:1fr}
+      .badge{justify-content:flex-start; min-width:0;}
     }
     @media (max-width:620px){
       .wrap{width:min(100% - 18px, 1120px); padding-top:12px}
       .grid{grid-template-columns:1fr}
-      .hero{padding:20px; border-radius:18px}
+      .hero{padding:20px; border-radius:20px}
       .toolbar{grid-template-columns:1fr}
       h1{font-size:34px}
       .card{min-height:auto}
@@ -222,15 +234,15 @@
       <div>
         <h1>ALE IMHOTEP</h1>
         <p class="sub">
-          Architecture Licensure Exam reviewer flashcards. Open a subject below.
-          Uploaded folders will automatically show as available once GitHub Pages can load them.
+          Architecture Licensure Exam reviewer dashboard. Open a subject below.
+          This dashboard only links to folders already uploaded in your repository.
         </p>
       </div>
       <div class="badge" id="availableBadge">Checking subjects…</div>
     </section>
 
     <section class="toolbar">
-      <input id="search" type="search" placeholder="Search subjects, e.g. design, planning, theory…" />
+      <input id="search" type="search" placeholder="Search subject, e.g. materials, planning, mock exam…" />
       <button class="smallBtn" id="showAll" type="button">Show All</button>
     </section>
 
@@ -238,47 +250,68 @@
     <section class="empty" id="empty">No subject matched your search.</section>
 
     <p class="note">
-      Tip: upload each subject folder at the repo root. Example:
-      <strong>/architectural-design/index.html</strong> and <strong>/architectural-design/cards.json</strong>.
+      Upload this file as <strong>index.html</strong> at the root of your GitHub repo.
+      Example root: <strong>README.md</strong>, <strong>index.html</strong>, <strong>building-materials-new-approach/</strong>.
     </p>
   </main>
 
   <script>
     const subjects = [
       {
-        title:"Building Technology & Materials",
-        path:"building-technology-materials/",
+        title:"Building Materials New Approach",
+        path:"building-materials-new-approach/",
         icon:"🧱",
-        count:"1,678 cards",
-        desc:"Construction materials, vernacular terms, CSI divisions, concrete, cement, mortar, reinforcement, finishes, acoustics, and related board-review items."
+        count:"540 cards",
+        desc:"Separate folder. Specific reviewer, weakness drill, final trap drill, and exam simulation for Building Materials."
+      },
+      {
+        title:"Subject Mock Exam",
+        path:"subject-mock-exam/",
+        icon:"📝",
+        count:"Mock exam mode",
+        desc:"Create a board-style mock exam by subject, range, item count, timer, and review missed."
       },
       {
         title:"Architectural Design",
         path:"architectural-design/",
         icon:"🏠",
         count:"426 cards",
-        desc:"Residential, subdivision, site planning, and building standards. This is the folder you already uploaded."
-      },
-      {
-        title:"Theory",
-        path:"theory/",
-        icon:"🏛️",
-        count:"549 cards",
-        desc:"Theory of Architecture plus Theory 2, with selected source-backed visuals."
+        desc:"Residential, subdivision, site planning, and building standards."
       },
       {
         title:"Planning",
         path:"planning/",
         icon:"🗺️",
         count:"426 cards",
-        desc:"Subdivision/site planning standards, community facilities, parks/playgrounds, roads/RROW, egress, utilities, and PD 957/BP 220/NBCP-related review items."
+        desc:"Planning reviewer folder from uploaded Planning deck."
+      },
+      {
+        title:"Building Technology & Materials",
+        path:"building-technology-materials/",
+        icon:"🏗️",
+        count:"1,678 cards",
+        desc:"Full Building Technology and Materials reviewer deck."
+      },
+      {
+        title:"Building Materials",
+        path:"building-materials/",
+        icon:"🧰",
+        count:"1,171 cards",
+        desc:"Older filtered Building Materials folder from the big deck."
+      },
+      {
+        title:"Theory",
+        path:"theory/",
+        icon:"🏛️",
+        count:"549 cards",
+        desc:"Theory of Architecture plus Theory 2."
       },
       {
         title:"Professional Practice",
         path:"professional-practice/",
         icon:"📋",
         count:"270 cards",
-        desc:"RA 9266, SPP documents, contracts, professional conduct, and practice traps."
+        desc:"RA 9266, SPP documents, contracts, and professional practice traps."
       },
       {
         title:"Building Laws",
@@ -290,23 +323,16 @@
       {
         title:"Building Construction",
         path:"building-construction/",
-        icon:"🏗️",
+        icon:"🔨",
         count:"Reviewer folder",
-        desc:"Construction systems, structural basics, and building assembly review."
-      },
-      {
-        title:"Building Materials",
-        path:"building-materials/",
-        icon:"🧱",
-        count:"Reviewer folder",
-        desc:"Materials identification, properties, and image-backed material review."
+        desc:"Construction systems, methods, and technical building assembly review."
       },
       {
         title:"Building Utilities",
         path:"building-utilities/",
         icon:"⚡",
         count:"Reviewer folder",
-        desc:"Electrical, mechanical, plumbing, sanitary, fire-protection and utility concepts."
+        desc:"Electrical, plumbing, sanitary, mechanical, and fire-protection utilities."
       },
       {
         title:"Tropical Design",
@@ -314,6 +340,13 @@
         icon:"🌿",
         count:"Pending",
         desc:"Tropical design, green architecture, passive cooling, shading, and energy concepts."
+      },
+      {
+        title:"History",
+        path:"history/",
+        icon:"🗿",
+        count:"Reviewer folder",
+        desc:"History of Architecture reviewer folder."
       }
     ];
 
@@ -326,7 +359,7 @@
       return `
         <article class="card" data-search="${(s.title + " " + s.desc + " " + s.path).toLowerCase()}" data-path="${s.path}">
           <div class="top">
-            <div style="display:flex;gap:12px;align-items:flex-start">
+            <div class="titleRow">
               <div class="icon">${s.icon}</div>
               <div>
                 <h2>${s.title}</h2>
@@ -337,7 +370,7 @@
           </div>
           <p class="desc">${s.desc}</p>
           <div class="actions">
-            <a class="btn primary" href="${s.path}">Open Subject</a>
+            <a class="btn primary" href="${s.path}">Open</a>
           </div>
         </article>
       `;
@@ -377,7 +410,7 @@
           btn.classList.add("disabled");
         }
       }
-      badge.textContent = available + " subject" + (available === 1 ? "" : "s") + " available";
+      badge.textContent = available + " available";
     }
 
     function applySearch(){
