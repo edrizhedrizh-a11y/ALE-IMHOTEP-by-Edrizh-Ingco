@@ -1,0 +1,29 @@
+ALE Building Materials — New Approach v1
+Cards: 540
+Folder: /building-materials-new-approach/
+
+Coverage included from uploaded text:
+- Building Materials Specific Reviewer: 300 items
+- Building Materials Weakness Drill: 120 items
+- Building Materials Final Trap Drill: 80 items
+- Building Materials Exam Simulation: 40 items
+
+Topic counts:
+- Weakness Drill: Sizes / Computation: 40
+- Weakness Drill: Confusing Pairs / Failure: 40
+- Weakness Drill: Sequence / Occupancy: 40
+- Final Trap: QC / Storage / Systems: 40
+- Final Trap: Green / Hazard / Tropical / Computation: 40
+- Exam Simulation: Mixed: 40
+- Boards / Sheets / Panels: 25
+- Cement / Concrete / Masonry: 25
+- Tiles / Adhesives / Grout: 25
+- Waterproofing / Sealants: 25
+- Paints / Primers / Surface Prep: 25
+- Roofing / Cladding / Exterior: 25
+- Glass / Metals / Hardware: 25
+- Flooring / Ceiling / Interior Finishes: 25
+- Fire / Acoustic / Thermal / Insulation: 25
+- Quantity / Unit / Coverage Computation: 25
+- Material Failure / Defects / Compatibility: 25
+- Occupancy-Based Material Scenarios: 25
