@@ -20,3 +20,16 @@ Features:
 - Local progress tracking
 
 No generated images. Text was extracted from the uploaded transcript and not independently audited against official codes/manufacturer datasheets.
+
+
+## v2 — Shuffled Choices Fix
+
+- Cards: 540
+- Correct-letter distribution:
+  - A: 135
+  - B: 135
+  - C: 135
+  - D: 135
+- This is a separate folder-only package.
+- Upload/replace only the folder: `building-materials-new-approach/`
+- Dashboard and subject mock exam are not included in this ZIP.

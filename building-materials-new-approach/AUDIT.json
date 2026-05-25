@@ -1,7 +1,7 @@
 {
   "subject": "ALE Building Materials — New Approach",
-  "version": "v1",
-  "folder": "building-materials-new-approach/",
+  "version": "v2-shuffled-choices",
+  "folder": "building-materials-new-approach",
   "cards": 540,
   "numbering": "Q1-Q540 continuous",
   "source": "/mnt/data/Pasted text.txt latest uploaded text",
@@ -21,8 +21,19 @@
   "old_1678_deck_included": false,
   "parse_failures": [],
   "notes": [
-    "No generated images",
-    "New folder; does not overwrite building-technology-materials/",
-    "Not independently audited against official codes or manufacturer datasheets"
-  ]
+    "Separate folder only.",
+    "Same folder name, so it can replace the older building-materials-new-approach folder.",
+    "Correct letters are balanced A/B/C/D in cards.json.",
+    "The app also shuffles choices during review."
+  ],
+  "choices_shuffled_in_cards_json": true,
+  "app_live_shuffles_choices": true,
+  "correct_letter_distribution": {
+    "A": 135,
+    "B": 135,
+    "C": 135,
+    "D": 135
+  },
+  "dashboard_included": false,
+  "mock_exam_included": false
 }

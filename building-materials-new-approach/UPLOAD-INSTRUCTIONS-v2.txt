@@ -1,0 +1,27 @@
+Building Materials New Approach v2 — Shuffled Choices
+
+Upload/replace this folder only:
+
+building-materials-new-approach/
+  index.html
+  cards.json
+  README.md
+  AUDIT.json
+  SOURCE-COVERAGE.txt
+  UPLOAD-INSTRUCTIONS-v2.txt
+
+iPad/GitHub upload method:
+1. Open the existing building-materials-new-approach folder in GitHub.
+2. Click Add file > Upload files.
+3. Upload these files from inside the extracted folder:
+   index.html
+   cards.json
+   README.md
+   AUDIT.json
+   SOURCE-COVERAGE.txt
+   UPLOAD-INSTRUCTIONS-v2.txt
+4. Commit changes.
+5. Open:
+   /building-materials-new-approach/?v=2
+
+This ZIP does not include root dashboard index.html.
