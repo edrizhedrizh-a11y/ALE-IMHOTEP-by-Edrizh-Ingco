@@ -1,0 +1,25 @@
+BU Crash Reviewer Source Coverage
+
+Converted into folder: building-utilities-crash-reviewer/
+Total cards: 250
+
+Parts:
+Part 0 — BU Board Exam Thinking Method: Q1-Q50
+Part 1 — Plumbing Water Supply: Q51-Q100
+Part 2 — Sanitary Drainage and Venting: Q101-Q150
+Part 3 — Fire Protection: Q151-Q190
+Part 4 — Electrical Power and Lighting: Q191-Q220
+Part 5 — HVAC and Mechanical Ventilation: Q221-Q250
+
+First card check:
+Q1 — Trap protection
+Sewer odor becomes worse when nearby fixtures discharge, meaning possible trap seal loss or venting issue. Which answer fits best?
+
+Last card check:
+Q250 — The exact function: remove air, supply air, return air, introduce fresh air, condition a zone, distribute centrally, chill water, or reject heat
+Choosing among exhaust fan, AHU, FCU, diffuser, return grille, fresh intake, chiller, tower. Which answer fits best?
+
+Choice behavior:
+- Correct answers are balanced in cards.json.
+- App also has shuffle choices option turned on by default.
+- Use the Reshuffle button to reshuffle current choices.

@@ -1,0 +1,30 @@
+{
+  "folder": "building-utilities-crash-reviewer",
+  "cards": 250,
+  "range": "Q1-Q250",
+  "parts": {
+    "0": "BU Board Exam Thinking Method",
+    "1": "Plumbing Water Supply",
+    "2": "Sanitary Drainage and Venting",
+    "3": "Fire Protection",
+    "4": "Electrical Power and Lighting",
+    "5": "HVAC and Mechanical Ventilation"
+  },
+  "choice_behavior": "choices are balanced in data and can be shuffled live in the app",
+  "correct_letter_distribution": {
+    "A": 63,
+    "B": 63,
+    "C": 62,
+    "D": 62
+  },
+  "dashboard_included": false,
+  "subject_mock_exam_included": false,
+  "first_card": "Sewer odor becomes worse when nearby fixtures discharge, meaning possible trap seal loss or venting issue. Which answer fits best?",
+  "last_card": "Choosing among exhaust fan, AHU, FCU, diffuser, return grille, fresh intake, chiller, tower. Which answer fits best?",
+  "notes": [
+    "Separate folder only",
+    "Created from pasted BU 250-item crash reviewer",
+    "No dashboard/index root included",
+    "No subject mock exam included"
+  ]
+}

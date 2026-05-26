@@ -1,0 +1,16 @@
+Upload instructions — separate folder only
+
+Upload this folder only:
+
+building-utilities-crash-reviewer/
+  index.html
+  cards.json
+  README.md
+  AUDIT.json
+  SOURCE-COVERAGE.txt
+  UPLOAD-INSTRUCTIONS.txt
+
+Do not upload a root index.html if you do not want to change the dashboard.
+
+Direct link after upload:
+/building-utilities-crash-reviewer/?v=1
