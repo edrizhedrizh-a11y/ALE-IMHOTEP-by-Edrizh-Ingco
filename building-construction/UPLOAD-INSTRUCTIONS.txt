@@ -1,0 +1,9 @@
+Upload only this folder to the GitHub repository root:
+
+building-construction/
+  index.html
+  cards.json
+
+Do not upload a root index.html if you do not want to change your dashboard.
+Open after GitHub Pages update:
+/building-construction/?v=1

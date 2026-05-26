@@ -1,0 +1,41 @@
+{
+  "folder": "building-construction",
+  "deck": "Building Construction PH Standard / ALE Crash Mode",
+  "cards": 250,
+  "correct_letter_distribution": {
+    "A": 63,
+    "B": 63,
+    "C": 62,
+    "D": 62
+  },
+  "shuffle_choices": true,
+  "separate_folder_only": true,
+  "parts": {
+    "Construction Board Exam Thinking Method": {
+      "partNumber": 0,
+      "count": 50
+    },
+    "Site Works, Earthworks, Excavation, and Foundations": {
+      "partNumber": 1,
+      "count": 50
+    },
+    "Concrete, Reinforcement, Formwork, and Curing": {
+      "partNumber": 2,
+      "count": 50
+    },
+    "Masonry, Steel, Wood, and Structural Assemblies": {
+      "partNumber": 3,
+      "count": 40
+    },
+    "Building Envelope, Roofing, Waterproofing, Doors, and Windows": {
+      "partNumber": 4,
+      "count": 30
+    },
+    "Finishes, Installation Sequence, Defects, and Site Safety": {
+      "partNumber": 5,
+      "count": 30
+    }
+  },
+  "source": "User-pasted 250-item Building Construction reviewer in chat",
+  "note": "No root dashboard or subject mock exam files included."
+}

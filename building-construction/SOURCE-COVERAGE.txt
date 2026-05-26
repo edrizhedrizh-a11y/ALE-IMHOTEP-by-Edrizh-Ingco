@@ -1,0 +1,10 @@
+Source: User-pasted Building Construction PH Standard / ALE Crash Mode, 250 items.
+Parts:
+0 Construction Board Exam Thinking Method Q1-Q50
+1 Site Works, Earthworks, Excavation, and Foundations Q51-Q100
+2 Concrete, Reinforcement, Formwork, and Curing Q101-Q150
+3 Masonry, Steel, Wood, and Structural Assemblies Q151-Q190
+4 Building Envelope, Roofing, Waterproofing, Doors, and Windows Q191-Q220
+5 Finishes, Installation Sequence, Defects, and Site Safety Q221-Q250
+
+Note: Converted into app cards with shuffled choices and balanced correct-letter distribution. Content is based on pasted reviewer text and was not independently code/standards audited.
