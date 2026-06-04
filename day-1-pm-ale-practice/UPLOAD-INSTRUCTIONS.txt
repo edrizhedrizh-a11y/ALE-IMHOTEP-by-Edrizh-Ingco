@@ -1,0 +1,24 @@
+UPLOAD INSTRUCTIONS — GitHub Pages
+
+Folder name to create:
+
+day-1-pm-ale-practice
+
+If GitHub asks you to create a file path first, use:
+
+day-1-pm-ale-practice/.gitkeep
+
+Then open the folder and upload these files:
+
+index.html
+cards.json
+README.md
+AUDIT.json
+SOURCE-COVERAGE.txt
+UPLOAD-INSTRUCTIONS.txt
+
+Expected URL after upload:
+
+https://edrizhedrizh-a11y.github.io/ALE-IMHOTEP-by-Edrizh-Ingco/day-1-pm-ale-practice/?v=1
+
+Do not upload the ZIP directly to GitHub Pages. Extract the ZIP first, then upload the folder/files.

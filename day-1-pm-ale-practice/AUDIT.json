@@ -1,0 +1,26 @@
+{
+  "deck": "Day 1 PM ALE Practice — 150 Items",
+  "folder": "day-1-pm-ale-practice",
+  "cardCount": 150,
+  "source": "Pasted user text in chat",
+  "sets": {
+    "Set 1": 50,
+    "Set 2": 50,
+    "Set 3": 50
+  },
+  "correctLetterDistribution": {
+    "A": 38,
+    "B": 38,
+    "C": 37,
+    "D": 37
+  },
+  "choiceShuffle": "Choices were redistributed in cards.json to balance correct letters; app can reshuffle choices on screen.",
+  "files": [
+    "index.html",
+    "cards.json",
+    "README.md",
+    "AUDIT.json",
+    "SOURCE-COVERAGE.txt",
+    "UPLOAD-INSTRUCTIONS.txt"
+  ]
+}
